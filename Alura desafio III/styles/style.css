@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #22D4FD;
+    --cor-hover: #272727;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+.cabecalho{
+    padding: 2% 0% 0% 15%;
+}
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+}
+.cabecalho__menu__link{
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+
+.secao-projeto {
+    display: flex;
+    flex-flow: column;
+    gap: 3.125rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 11.875rem 0;
+  }
+
+.apresentacao{
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+.apresentacao__conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo{
+    font-size: 2.25rem;
+    font-family: 'Krona One', sans-serif;
+}
+
+.apresentacao__conteudo__texto{
+    font-size: 1.5rem;
+    font-family: 'Krona One', sans-serif;
+}
+
+.apresentacao__links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+.apresentacao__links__subtitulo{
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.apresentacao__links__navegacao{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid #22D4FD;
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: 'Krona One', sans-serif;
+}
+.apresentacao__links__navegacao:hover{
+    background-color: #50b8cf;
+}
+
+
+.rodape{
+    color: #000000;
+    background-color: #22D4FD;
+    margin-top: 20%;
+    padding: 35px;
+    text-align: center;
+    font-family: 'Krona One', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+    .cabecalho{
+         padding: 10%;  
+    }
+    .cabecalho__menu{
+        justify-content: center;
+    }
+    .apresentacao{
+        flex-direction: column-reverse;
+    }
+    
+}
+
+
+
+  .blocoprojeto {
+    display: flex;
+    flex-flow: column;
+    gap: 3.125rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 11.875rem 0;
+  }
+
+.blocoprojeto {
+    display: flex;
+    flex-flow: column;
+    padding: 0 0 3.9375rem 0;
+  }
+
+  .projetoscards {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+  }
+
+.inicioblocos {
+    padding: 0 0 0 0;
+  }
+  
+.subbloco {
+  display: flex;
+}
+
+.bordaimagem {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .bordaimagem img {
+    display: block;
+    border-radius: 1rem;
+    position: relative;
+    z-index: 1;
+    width: 23.9375rem;
+    height: 15.9375rem;
+  }
+  
+  .bordaimagem::before {
+    content: "";
+    position: absolute;
+    top: 0.75rem;
+    left: 0.75rem;
+    right: -0.75rem;
+    bottom: -0.75rem;
+    border: 0.1875rem solid #F6F6F6;
+    border-radius: 1rem;
+    z-index: 1;
+  }
+  
+  .bordaimagem-index::before {
+    top: -1.25rem;
+    left: 1.25rem;
+    right: -1.25rem;
+    bottom: 1.25rem;
+
+  }
+  
+  .bordaimagem-index img {
+    width: 468px;
+    height: 532px;
+    border-radius: 1rem;
+  }
+
+  .textoprojeto {
+    color: #F6F6F6;
+    font-family: 'Krona One', sans-serif;;
+    font-size: 1.5rem;
+    text-align: justify;
+    display: flex;
+    width: 78.5625rem;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10%;
+    margin: 0;
+    gap: 10%;
+  }
+
